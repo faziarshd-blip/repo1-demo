@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>repo1-demo</title>
+    <meta name="description" content="Basic starter HTML for repo1-demo" />
+    <style>
+        :root { --max-w: 900px; --accent: #0366d6; --muted: #6b7280; }
+        body { font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; color:#111; line-height:1.5; background:#f7fafc; }
+        .wrap { max-width:var(--max-w); margin:4rem auto; padding:1rem; background:white; border-radius:8px; box-shadow:0 6px 18px rgba(2,6,23,0.08); }
+        header { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:1.25rem; }
+        nav a { color:var(--accent); text-decoration:none; margin-left:1rem; font-weight:600; }
+        h1 { margin:0 0 .25rem 0; font-size:1.5rem; }
+        p.lead { color:var(--muted); margin:0 0 1rem 0; }
+        main { margin-top:1rem; }
+        pre { background:#0f1724; color:#e6eef8; padding:1rem; border-radius:6px; overflow:auto; font-size:.9rem; }
+        footer { margin-top:2rem; color:var(--muted); font-size:.9rem; text-align:center; }
+        .btn { display:inline-block; padding:.45rem .75rem; background:var(--accent); color:white; border-radius:6px; text-decoration:none; font-weight:600; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div>
+                <h1>repo1-demo</h1>
+                <div class="lead">A minimal starter HTML file</div>
+            </div>
+            <nav aria-label="Primary">
+                <a href="#" class="btn">Get started</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Overview</h2>
+                <p>This file provides a clean, responsive starting point for your project. Edit the content below to begin building.</p>
+            </section>
+
+            <section>
+                <h3>Example code</h3>
+                <pre>&lt;!-- Add your HTML here --&gt;
+&lt;section&gt;
+    &lt;h2&gt;Hello world&lt;/h2&gt;
+    &lt;p&gt;Replace this with your content.&lt;/p&gt;
+&lt;/section&gt;</pre>
+            </section>
+        </main>
+
+        <footer>
+            © <span id="year"></span> repo1-demo — Built with a simple template
+        </footer>
+    </div>
+
+    <script>
+        // small helper: set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
